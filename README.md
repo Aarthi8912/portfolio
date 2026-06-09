@@ -8,7 +8,7 @@ A modern, responsive, and interactive portfolio website built using React.js and
 
 ## 👩‍💻 About Me
 
-I am Aarthi S, a B.Tech Information Technology student passionate about Data Analytics, Machine Learning, Artificial Intelligence, Data Science, and Web Development.
+I am Aarthi S, a B.Tech Information Technology (Honours) student passionate about Data Analytics, Machine Learning, Artificial Intelligence, Data Science, and Web Development.
 
 I enjoy transforming complex data into meaningful insights and building intelligent applications that solve real-world problems.
 
@@ -118,7 +118,7 @@ Personal portfolio showcasing skills, projects, certifications, and achievements
 
 ## 🎓 Education
 
-Bachelor of Technology (Information Technology)
+Bachelor of Technology Information Technology (Honours)
 
 CGPA: 8.77
 
@@ -136,7 +136,7 @@ CGPA: 8.77
 📧 Email: [aarthia776@gmail.com](mailto:aarthia776@gmail.com)
 
 💼 LinkedIn:
-https://www.linkedin.com/in/your-linkedin-profile
+https://www.linkedin.com/in/s-aarthi-825a29262
 
 💻 GitHub:
 https://github.com/Aarthi8912
@@ -173,12 +173,8 @@ Build project:
 npm run build
 ```
 
-## 📸 Portfolio Preview
-
-Add screenshots of your portfolio inside a `screenshots` folder and include them here.
-
 ## 🤝 Connect With Me
 
 If you like my work, feel free to connect with me on LinkedIn or GitHub.
 
-⭐ Don't forget to star the repository if you found it useful.
+
