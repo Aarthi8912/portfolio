@@ -379,3 +379,63 @@ section{
 }
 
 }
+/* =========================
+   LIGHT MODE FIX
+========================= */
+
+body.light-mode .about-right h3{
+    color:#0f172a;
+}
+
+body.light-mode .about-right p{
+    color:#475569;
+}
+
+body.light-mode .highlight{
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+}
+
+body.light-mode .highlight span{
+    color:#0f172a !important;
+    font-weight:600;
+}
+
+body.light-mode .highlight{
+    background:linear-gradient(
+      135deg,
+      #eff6ff,
+      #f8fafc
+    );
+
+    border:1px solid #bfdbfe;
+
+    box-shadow:
+      0 5px 15px rgba(0,0,0,.05);
+}
+
+body.light-mode .achievement-box{
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+}
+
+body.light-mode .achievement-box h4{
+    color:#0f172a;
+}
+
+body.light-mode .achievement-box p{
+    color:#475569;
+}
+
+body.light-mode .stat-card{
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+}
+
+body.light-mode .stat-card p{
+    color:#475569;
+}
+
+body.light-mode .resume-download{
+    color:white;
+}
