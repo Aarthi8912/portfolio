@@ -1,0 +1,444 @@
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-section{
+    padding:120px 8%;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Background Glow */
+
+.skills-section::before{
+    content:"";
+
+    position:absolute;
+
+    width:400px;
+    height:400px;
+
+    background:#38bdf8;
+
+    filter:blur(180px);
+
+    opacity:.08;
+
+    left:-150px;
+    top:150px;
+}
+
+.skills-section::after{
+    content:"";
+
+    position:absolute;
+
+    width:400px;
+    height:400px;
+
+    background:#8b5cf6;
+
+    filter:blur(180px);
+
+    opacity:.08;
+
+    right:-150px;
+    bottom:100px;
+}
+
+/* =========================
+   GALAXY CONTAINER
+========================= */
+
+.galaxy-container{
+
+    position:relative;
+
+    width:700px;
+    height:700px;
+
+    margin:60px auto;
+
+    z-index:2;
+}
+
+/* =========================
+   CENTER CORE
+========================= */
+
+.center-core{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(
+      135deg,
+      #38bdf8,
+      #8b5cf6
+    );
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    z-index:20;
+
+    box-shadow:
+    0 0 60px rgba(56,189,248,.6);
+}
+
+.center-core h3{
+    font-size:1.8rem;
+    margin-bottom:5px;
+}
+
+.center-core p{
+    font-size:14px;
+}
+
+/* =========================
+   ORBITS
+========================= */
+
+.orbit{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    border:1px dashed
+    rgba(255,255,255,.15);
+
+    border-radius:50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    animation:
+    rotate 25s linear infinite;
+}
+
+.orbit1{
+    width:250px;
+    height:250px;
+}
+
+.orbit2{
+    width:350px;
+    height:350px;
+    animation-duration:30s;
+}
+
+.orbit3{
+    width:450px;
+    height:450px;
+    animation-duration:35s;
+}
+
+.orbit4{
+    width:550px;
+    height:550px;
+    animation-duration:40s;
+}
+
+.orbit5{
+    width:650px;
+    height:650px;
+    animation-duration:45s;
+}
+
+/* =========================
+   PLANETS
+========================= */
+
+.planet{
+
+    position:absolute;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+    white-space:nowrap;
+}
+
+.planet:hover{
+
+    transform:scale(1.15);
+
+    background:
+    linear-gradient(
+      135deg,
+      #38bdf8,
+      #8b5cf6
+    );
+
+    box-shadow:
+    0 0 25px rgba(56,189,248,.5);
+}
+
+/* Planet Positions */
+
+.orbit span:nth-child(1){
+
+    top:-20px;
+    left:50%;
+
+    transform:translateX(-50%);
+}
+
+.orbit span:nth-child(2){
+
+    bottom:-20px;
+    left:50%;
+
+    transform:translateX(-50%);
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes rotate{
+
+    from{
+        transform:
+        translate(-50%,-50%)
+        rotate(0deg);
+    }
+
+    to{
+        transform:
+        translate(-50%,-50%)
+        rotate(360deg);
+    }
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+body.light-mode .skills-section{
+    background:#f8fafc;
+}
+
+body.light-mode .center-core{
+
+    color:white;
+
+    box-shadow:
+    0 0 50px rgba(56,189,248,.4);
+}
+
+body.light-mode .orbit{
+
+    border:1px dashed
+    rgba(15,23,42,.15);
+}
+
+body.light-mode .planet{
+
+    background:white;
+
+    color:#0f172a;
+
+    border:1px solid #e2e8f0;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.05);
+}
+
+body.light-mode .planet:hover{
+
+    color:white;
+
+    border:none;
+
+    background:
+    linear-gradient(
+      135deg,
+      #38bdf8,
+      #8b5cf6
+    );
+}
+
+body.light-mode .section-title h2{
+    color:#0f172a;
+}
+
+body.light-mode .section-title span{
+    color:#0284c7;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.galaxy-container{
+
+    width:600px;
+    height:600px;
+}
+
+.orbit5{
+    width:550px;
+    height:550px;
+}
+
+.orbit4{
+    width:470px;
+    height:470px;
+}
+
+.orbit3{
+    width:390px;
+    height:390px;
+}
+
+.orbit2{
+    width:310px;
+    height:310px;
+}
+
+.orbit1{
+    width:230px;
+    height:230px;
+}
+
+}
+
+@media(max-width:768px){
+
+.galaxy-container{
+
+    width:100%;
+    height:500px;
+}
+
+.center-core{
+
+    width:130px;
+    height:130px;
+}
+
+.center-core h3{
+    font-size:1.1rem;
+}
+
+.orbit5{
+    width:450px;
+    height:450px;
+}
+
+.orbit4{
+    width:390px;
+    height:390px;
+}
+
+.orbit3{
+    width:330px;
+    height:330px;
+}
+
+.orbit2{
+    width:270px;
+    height:270px;
+}
+
+.orbit1{
+    width:210px;
+    height:210px;
+}
+
+.planet{
+    font-size:12px;
+    padding:8px 14px;
+}
+
+}
+
+@media(max-width:480px){
+
+.galaxy-container{
+    height:420px;
+}
+
+.orbit5{
+    width:380px;
+    height:380px;
+}
+
+.orbit4{
+    width:320px;
+    height:320px;
+}
+
+.orbit3{
+    width:260px;
+    height:260px;
+}
+
+.orbit2{
+    width:210px;
+    height:210px;
+}
+
+.orbit1{
+    width:170px;
+    height:170px;
+}
+
+.center-core{
+    width:100px;
+    height:100px;
+}
+
+.center-core h3{
+    font-size:.9rem;
+}
+
+.center-core p{
+    font-size:11px;
+}
+
+.planet{
+    font-size:10px;
+    padding:6px 10px;
+}
+
+}

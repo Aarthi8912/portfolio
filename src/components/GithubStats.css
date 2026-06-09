@@ -1,0 +1,98 @@
+.github-section{
+    padding:120px 8%;
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+}
+
+.stat-card{
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.4s;
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+      0 0 30px rgba(56,189,248,.25);
+}
+
+.stat-icon{
+
+    font-size:2.5rem;
+
+    color:#38bdf8;
+
+    margin-bottom:20px;
+}
+
+.stat-card h3{
+
+    font-size:2rem;
+
+    color:white;
+
+    margin-bottom:10px;
+}
+
+.stat-card p{
+
+    color:#cbd5e1;
+
+    font-size:15px;
+}
+
+.github-profile{
+
+    text-align:center;
+
+    margin-top:60px;
+}
+
+.github-profile a{
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:15px;
+
+    background:
+      linear-gradient(
+        135deg,
+        #38bdf8,
+        #8b5cf6
+      );
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.github-profile a:hover{
+
+    box-shadow:
+      0 0 25px rgba(56,189,248,.4);
+}
